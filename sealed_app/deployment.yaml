@@ -15,10 +15,41 @@ spec:
                 app: simple-coffee
         spec:
             containers:
-                - name: nginx
-                  image: qjoly/kubernetes-coffee-image:simple
+                - name: ENC[AES256_GCM,data:klKdBpY=,iv:ahlZqTgpVxTuuNEvInytpJtjkYCn2/sOeGyv436abYA=,tag:syzgCh2g1WJeoAWl7Xf+VA==,type:str]
+                  image: ENC[AES256_GCM,data:lUx39IqrWiJmnwSIr0DEzC3q8pAkf6Zcgo6epfQItTjVKjAv,iv:DKCVXEDjiIi+kAEO/Fp7gl2tP3oMjKU8kWejE9TueHU=,tag:xYae32gdItXM3NmhiWS74w==,type:str]
                   ports:
-                    - containerPort: 80
+                    - containerPort: ENC[AES256_GCM,data:dOs=,iv:TXZXkYSuTTPM0Hg8I9JU0px72PvXVvxPk/krpmB+9jI=,tag:H1h8ONngGgA9ScrRuz0y1Q==,type:int]
                   env:
-                    - name: MACHINE_COFFEE
-                      value: Krups à grain
+                    - name: ENC[AES256_GCM,data:kfZPqkJ9SaAPxLq0cps=,iv:v7DypWjYeZzIxPOmO40+wZIMZbD8dpdCkqMRAztgrMg=,tag:VpNUUjmC72Ei8L28bTToiA==,type:str]
+                      value: ENC[AES256_GCM,data:VFKw0sBMbcuoMPJwDP0=,iv:TWt+4u+tux+IQMv7EH6eEhbUDnureIaeYfmHDNmXxIM=,tag:Rdew8VxBO+NY/tYwyLeiAA==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2024-03-27T06:17:14Z"
+    mac: ENC[AES256_GCM,data:/caNFnCZ7QsLOzdEbc3T17DF5ST2nAUFScqQgFxLtRhUuTBFgZo40UZEtLSKpb/qoVnLF9SFeB/x/lfa55CoW2BJgSIjotAqMEH4kueKVH9hJFzkDJD/6C5pnSucN0vCEUQQbUsgwbvgnv9M9bfQb9Y6ACEXM10llVSdNSp1nog=,iv:8wwa7YBZyjVX52MaISDrLPBV/UX7ihW5Ph4sHR7WMz8=,tag:5NA17hAN/LKJijH4+5YisQ==,type:str]
+    pgp:
+        - created_at: "2024-03-27T06:17:14Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMAzbPCEDYgsyOAQ/9HijcONYjKIA+i1AKscDQShfGT//1Ei1Ar14Qd1nItF5K
+            3KlDQXPOdUwQsJoAh0KCdzjNH8c0Xuuhlr8xVWmu2lB2PMsMdOpf8FzZm/PESP0O
+            Xi9FkEjHDh2UBiNltmq1Rk/254JMNm/MeKl3S657FQGxiMW8/5RLqlNzrf64Qm2+
+            ooTkQ/on54PhVNJkJeuPfgXweKDR+DahfaiIfrh5dVW9LPFmo2DmMpabIxeNZOXk
+            Pfjh/k/9fyx378tNrVRbf1LNa7lO5LvUuEGG+Z33vHQGFwcno0D5tP2bOPvbkHY6
+            up1YxVss+MnJuguiWRZnlrLK8u96FjELD5r5q1fvX6epHSWhbWxhI8ElkTNBO7AX
+            HGHTOWLT6A4E9fq4d1KJhU9fIF1uM7+Cqoo8hUOXvPuSJmdRK1kKE0Xb752VK9RB
+            k9fbQI7b9k3fwyAG9fh4xZBYkee9QgH3g/kyrC6FL4H3v8hST3EdOQeYWG2SM2NL
+            sMErZqYGWnM2vkmGWC/gO6ADFq2bWB7yMONgKmXpC2BO62SIjhZ6GNyqwJWegARw
+            Vy70Wh8md1Yro7nama/lPRD+R+/VLi7S8rfiB5YZxl81RAg1wWheLC3OF6beWiZg
+            aDekwzGo/9YK9lcnD600V2bbF+XX5VPzLqTq7FiWaqQdxqAYslGWrtkJuJwvLG3S
+            XgG5dxnQSL4NsxUF61ASaQtJqvjaXib9hFJs9AIapJyuKWdHs3PIHjdGd/9NxSuj
+            pIt+GTYR4lN1iOjGQ9XKH63rzvRxpBulpvEF5lAAZitL5+bj7I/ii6eKDiBtPnI=
+            =ZEy4
+            -----END PGP MESSAGE-----
+          fp: F21681FB17B40B7FFF573EF3F300795590071478
+    encrypted_regex: ^(containers)$
+    version: 3.8.1
