@@ -1,0 +1,5 @@
+creation_rules:
+  - path_regex: sealed.yaml$
+    encrypted_regex: "^(containers)$"
+    pgp: >-
+      F21681FB17B40B7FFF573EF3F300795590071478

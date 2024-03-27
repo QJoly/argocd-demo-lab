@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: simple-coffee
+    labels:
+        app: simple-coffee
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: simple-coffee
+    template:
+        metadata:
+            labels:
+                app: simple-coffee
+        spec:
+            containers:
+                - name: nginx
+                  image: qjoly/kubernetes-coffee-image:simple
+                  ports:
+                    - containerPort: 80
+                  env:
+                    - name: MACHINE_COFFEE
+                      value: Krups à grain
